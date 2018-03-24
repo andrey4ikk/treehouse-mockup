@@ -1,0 +1,55 @@
+.special-bg-block {
+    display: flex;
+    flex-direction: row; 
+}
+
+.background-icon {
+    width: 30%;
+    background-color: #E9E9E9;
+    position: relative;
+
+    @media (max-width:940px){
+        display: none;
+    }
+
+}
+
+.background-icon:after {
+    display: block;
+    width: 190px;
+    height: 100%;
+    position: absolute;
+    content: "";
+    background-image: url(../img/gear.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    right: 0px;
+    top: 0px;
+
+}
+
+
+.background-photo {
+    width: 70%; 
+    background-image: url(../img/bg-relax.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+
+    
+    @media (max-width:940px){
+        width:100%;
+    }
+}
+
+.special-bg-block-content {
+    padding: 100px;
+    width: 700px;
+    color: #cccccc;
+
+    
+    @media (max-width:940px){
+       width: 100%;
+       padding: 35px 15px;
+    }
+}
